@@ -21,6 +21,7 @@ fi
 echo "=== Fim do health check ==="
 
 # 3) Memória disponível
+echo "[OK] Tempo ligado: $(uptime -p)"
 echo "[OK] Memoria disponivel: $(free -m | grep Mem | awk '{print $7}') MB"
 
 # 4) Processos
